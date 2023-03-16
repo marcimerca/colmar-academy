@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
 }
 
 #first-bar-container {
@@ -32,12 +37,107 @@ body {
 }
 
 #first-bar-container nav {
-    margin-right: 1.5rem;
-    text-align: right;
-    flex-grow: 1;
+  margin-right: 1.5rem;
+  text-align: right;
+  flex-grow: 1;
 }
 #first-bar-container nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.main-box {
+  background-color: lightgray;
+}
+
+#banner-container {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.img-banner {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  display: inline;
+}
+
+.banner-text {
+  height: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.big-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3f3f3f;
+  text-align: start;
+  line-height: 3.2rem;
+}
+
+.banner-text h2 {
+  color: #3f3f3f;
+  margin-top: -0.5rem;
+}
+
+#start-button {
+  margin-top: 4rem;
+  text-align: center;
+  color: white;
+  width: 20rem;
+  height: 3rem;
+  background-color: #3f3f3f;
+  padding: 0.5rem;
+}
+
+#practicing {
+  width: 100%;
+  margin-top: 0rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid green;
+  height: auto;
+}
+
+#img-pract {
+    width: 100%;
+    margin: 2rem 1.5rem;
+    display: inline;
+}
+
+.pract-image-text {
+  width: 60%;
+}
+
+.pract-text {
     margin-left: 1rem;
-    text-decoration: none;
-    color: black;
+    font-size: 1.5rem;
+    margin-top: -3rem;
+    width: 60%;
+}
+
+.pract-text p {
+    margin-top: -0.5rem;
+    font-size: 1rem;
+    color: #6a6a6a;
+}
+
+.right-menu {
+    margin-left: 1.5rem;
+    width: 35%;
+    height: 50rem;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-menu-img {
+    width: 35%;
+    padding: 1rem;
+   
 }
