@@ -315,6 +315,7 @@ footer {
   }
   .right-menu-img-txt {
     flex-direction: column;
+    border-style: hidden;
   }
 
   .right-menu-img,
@@ -325,7 +326,8 @@ footer {
   .campus-mobile,
   .guest-mobile {
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   #courses {
