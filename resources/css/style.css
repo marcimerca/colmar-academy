@@ -66,6 +66,7 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  border: 1px solid red;
 }
 
 .big-title {
@@ -140,24 +141,32 @@ body {
   height: 45rem;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
-
+.orientation-img {
+  display: inline-flex;
+}
 .right-menu-img {
-  width: 35%;
+  width: 80%;
+  margin-right: 0;
 }
-
+.guest-desk {
+  width: 80%;
+}
 .right-menu-img-txt {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   border: 1px solid beige;
-  align-content: center;
   margin-bottom: 2rem;
+  height: 40rem;
+  width: 100%;
 }
 
 .right-menu-txt {
-  margin-left: 1rem;
-  margin-right: 0.5rem;
+  margin-left: -1.5rem;
+  margin-right: 1rem;
   text-align: left;
+  width: 70%;
 }
 .right-menu-txt h2 {
   font-weight: bold;
@@ -179,7 +188,6 @@ body {
   height: auto;
   background-color: #eeeeee;
   padding-top: 2rem;
-
 }
 
 .h2-learning {
@@ -226,9 +234,8 @@ body {
   height: auto;
 }
 
-.left-right-box{
-display: inline-flex;
-
+.left-right-box {
+  display: inline-flex;
 }
 
 .video-text-box {
@@ -245,7 +252,6 @@ display: inline-flex;
   display: inline-flex;
   flex-direction: column;
   margin-left: 2rem;
-
 }
 .mini-right-menu-img {
   height: 70%;
@@ -254,8 +260,6 @@ display: inline-flex;
   display: flex;
   align-items: center;
   height: auto;
-
-
 }
 
 .mini-right-menu-txt {
@@ -268,5 +272,63 @@ footer {
   justify-content: space-between;
   margin: 2rem 1.5rem;
   font-size: small;
-  
+}
+.mobile-first-bar-container {
+  display: none;
+}
+
+.orientation-mobile,
+.campus-mobile,
+.guest-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 580px) {
+  #first-bar-container {
+    display: none;
+  }
+
+  .mobile-first-bar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+  #banner-container {
+    flex-direction: column;
+    height: 58rem;
+  }
+  .img-banner {
+    width: 100%;
+  }
+  .banner-text {
+    align-content: baseline;
+    text-align: left;
+  }
+
+  .pract-image-text {
+    display: none;
+  }
+  .right-menu {
+    width: 100%;
+    flex-direction: column;
+  }
+  .right-menu-img-txt {
+    flex-direction: column;
+  }
+
+  .right-menu-img,
+  .guest-desk {
+    display: none;
+  }
+  .orientation-mobile,
+  .campus-mobile,
+  .guest-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  #courses {
+    margin-top:31.5rem;
+  }
 }
