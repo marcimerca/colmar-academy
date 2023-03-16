@@ -1,6 +1,7 @@
 body {
   font-family: "Nunito", sans-serif;
   margin: 0 auto;
+  text-align: center;
 }
 
 #first-bar-container {
@@ -117,12 +118,13 @@ body {
 .pract-text {
   margin-left: 1rem;
   font-size: 1.5rem;
-  margin-top: -3rem;
+  margin-top: -3.5rem;
   width: 60%;
+  text-align: left;
 }
 
 .pract-text p {
-  margin-top: -0.5rem;
+  margin-top: -1rem;
   font-size: 1rem;
   color: #6a6a6a;
 }
@@ -171,11 +173,13 @@ body {
 }
 
 #courses {
+  margin-top: 2rem;
   text-align: center;
   width: 100%;
-  height: 70rem;
+  height: auto;
   background-color: #eeeeee;
   padding-top: 2rem;
+
 }
 
 .h2-learning {
@@ -189,6 +193,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 2rem 4.5rem;
+  padding-bottom: 2rem;
 }
 .course-img-text {
   margin: 1rem 1rem;
@@ -214,5 +219,54 @@ body {
 }
 .course-text p {
   color: darkgrey;
+}
+
+#thesis-exibit {
+  width: 100%;
+  height: auto;
+}
+
+.left-right-box{
+display: inline-flex;
+
+}
+
+.video-text-box {
+  width: 50%;
+  margin-left: 1.5rem;
+  text-align: left;
+}
+
+.video-text-box p {
+  color: darkgrey;
+}
+
+.mini-right-menu {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 2rem;
+
+}
+.mini-right-menu-img {
+  height: 70%;
+}
+.mini-right-menu-img-txt {
+  display: flex;
+  align-items: center;
+  height: auto;
+
+
+}
+
+.mini-right-menu-txt {
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1.5rem;
+  font-size: small;
   
 }
